@@ -9,8 +9,14 @@ class App extends Component {
     comments: [],
   };
 
-  addComment = () => {
+  addComment = (comment) => {
     /* change me */
+    this.setState({
+      comments: [
+        ...this.state.comments,
+        comment
+      ]
+    })
   }
 
   render() {
